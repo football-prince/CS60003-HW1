@@ -1,0 +1,67 @@
+{
+  "search_name": "full_run_search",
+  "mode": "random",
+  "num_trials": 4,
+  "best_result": {
+    "trial": 1,
+    "run_name": "full_run_search_trial_001",
+    "learning_rate": 0.01,
+    "hidden_dim1": 512,
+    "hidden_dim2": 256,
+    "weight_decay": 0.0001,
+    "activation": "relu",
+    "best_val_accuracy": 0.6254320987654322,
+    "best_epoch": 10,
+    "checkpoint_path": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/full_run_search_trial_001_best.npz"
+  },
+  "results": [
+    {
+      "trial": 1,
+      "run_name": "full_run_search_trial_001",
+      "learning_rate": 0.01,
+      "hidden_dim1": 512,
+      "hidden_dim2": 256,
+      "weight_decay": 0.0001,
+      "activation": "relu",
+      "best_val_accuracy": 0.6254320987654322,
+      "best_epoch": 10,
+      "checkpoint_path": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/full_run_search_trial_001_best.npz"
+    },
+    {
+      "trial": 2,
+      "run_name": "full_run_search_trial_002",
+      "learning_rate": 0.005,
+      "hidden_dim1": 512,
+      "hidden_dim2": 256,
+      "weight_decay": 0.0,
+      "activation": "tanh",
+      "best_val_accuracy": 0.5706172839506173,
+      "best_epoch": 10,
+      "checkpoint_path": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/full_run_search_trial_002_best.npz"
+    },
+    {
+      "trial": 3,
+      "run_name": "full_run_search_trial_003",
+      "learning_rate": 0.01,
+      "hidden_dim1": 128,
+      "hidden_dim2": 64,
+      "weight_decay": 0.0001,
+      "activation": "tanh",
+      "best_val_accuracy": 0.5804938271604938,
+      "best_epoch": 8,
+      "checkpoint_path": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/full_run_search_trial_003_best.npz"
+    },
+    {
+      "trial": 4,
+      "run_name": "full_run_search_trial_004",
+      "learning_rate": 0.001,
+      "hidden_dim1": 512,
+      "hidden_dim2": 256,
+      "weight_decay": 0.001,
+      "activation": "tanh",
+      "best_val_accuracy": 0.49580246913580245,
+      "best_epoch": 10,
+      "checkpoint_path": "/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/full_run_search_trial_004_best.npz"
+    }
+  ]
+}

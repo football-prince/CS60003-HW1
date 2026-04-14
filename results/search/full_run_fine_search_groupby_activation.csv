@@ -1,0 +1,2 @@
+activation,num_trials,mean_best_val_accuracy,std_best_val_accuracy,max_best_val_accuracy,min_best_val_accuracy
+relu,27,0.6586374028349335,0.009799279488144644,0.6711111111111111,0.6392592592592593

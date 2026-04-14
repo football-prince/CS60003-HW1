@@ -1,0 +1,5 @@
+trial,run_name,learning_rate,hidden_dim1,hidden_dim2,weight_decay,activation,best_val_accuracy,best_epoch,checkpoint_path
+1,search_20260414_100200_trial_001,0.1,512,256,0.0001,relu,0.11259259259259259,1,/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/search_20260414_100200_trial_001_best.npz
+2,search_20260414_100200_trial_002,0.05,512,256,0.0,tanh,0.06592592592592593,1,/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/search_20260414_100200_trial_002_best.npz
+3,search_20260414_100200_trial_003,0.1,128,64,0.0001,tanh,0.09506172839506173,1,/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/search_20260414_100200_trial_003_best.npz
+4,search_20260414_100200_trial_004,0.01,512,256,0.0005,tanh,0.06592592592592593,1,/Users/football_prince/Desktop/2 研究生/1 课程文件/深度学习与空间智能/hw1/results/checkpoints/search_20260414_100200_trial_004_best.npz

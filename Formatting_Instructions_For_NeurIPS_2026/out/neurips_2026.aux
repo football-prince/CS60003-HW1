@@ -1,0 +1,49 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Dataset and Preprocessing}{1}{section.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Dataset split and input configuration used in the final training pipeline. The raw images are \(64 \times 64\), while the MLP input is resized to \(32 \times 32\).}}{2}{table.1}\protected@file@percent }
+\newlabel{tab:data_split}{{1}{2}{Dataset split and input configuration used in the final training pipeline. The raw images are \(64 \times 64\), while the MLP input is resized to \(32 \times 32\)}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Class distribution in the EuroSAT RGB dataset, read from the local \texttt  {EuroSAT\_RGB/} directory.}}{2}{table.2}\protected@file@percent }
+\newlabel{tab:class_distribution}{{2}{2}{Class distribution in the EuroSAT RGB dataset, read from the local \texttt {EuroSAT\_RGB/} directory}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Model Architecture}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Training Method}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Hyperparameter Search Strategy}{3}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Stage 1: coarse search.}{3}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Stage 2: fine search.}{3}{section*.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Summary of the two-stage hyperparameter search strategy and the best configuration found at each stage.}}{4}{table.3}\protected@file@percent }
+\newlabel{tab:search_strategy}{{3}{4}{Summary of the two-stage hyperparameter search strategy and the best configuration found at each stage}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Grouped statistics from the coarse and fine searches. Values are mean best validation accuracy over all configurations sharing the same hyperparameter value.}}{4}{table.4}\protected@file@percent }
+\newlabel{tab:search_grouped}{{4}{4}{Grouped statistics from the coarse and fine searches. Values are mean best validation accuracy over all configurations sharing the same hyperparameter value}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Top configurations from the two-stage search. The best results consistently favor ReLU, larger hidden widths, and relatively aggressive learning rates.}}{4}{table.5}\protected@file@percent }
+\newlabel{tab:search_results}{{5}{4}{Top configurations from the two-stage search. The best results consistently favor ReLU, larger hidden widths, and relatively aggressive learning rates}{table.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Experimental Results}{4}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Validation and Test Performance}{4}{subsection.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Grouped coarse-search statistics. The left panel shows that \(0.03\) is the strongest learning rate among the coarse candidates, while the right panel shows that larger hidden dimensions consistently improve validation accuracy.}}{5}{figure.1}\protected@file@percent }
+\newlabel{fig:grouped_search}{{1}{5}{Grouped coarse-search statistics. The left panel shows that \(0.03\) is the strongest learning rate among the coarse candidates, while the right panel shows that larger hidden dimensions consistently improve validation accuracy}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Additional evidence from the hyperparameter study. The left panel shows the coarse-search comparison among ReLU, Tanh, and Sigmoid, where ReLU performs best and Sigmoid is clearly weakest on average. The right panel is the fine-search heatmap over learning rate and first-layer hidden width, showing that wider models combined with learning rates around \(0.03\) to \(0.06\) are consistently strong.}}{5}{figure.2}\protected@file@percent }
+\newlabel{fig:search_heatmaps}{{2}{5}{Additional evidence from the hyperparameter study. The left panel shows the coarse-search comparison among ReLU, Tanh, and Sigmoid, where ReLU performs best and Sigmoid is clearly weakest on average. The right panel is the fine-search heatmap over learning rate and first-layer hidden width, showing that wider models combined with learning rates around \(0.03\) to \(0.06\) are consistently strong}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Final experiment summary from the completed two-stage pipeline.}}{5}{table.6}\protected@file@percent }
+\newlabel{tab:final_metrics}{{6}{5}{Final experiment summary from the completed two-stage pipeline}{table.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Training loss, validation loss, and validation accuracy for the final 30-epoch run after hyperparameter selection. The validation accuracy improves steadily and reaches its best value at the end of training.}}{6}{figure.3}\protected@file@percent }
+\newlabel{fig:curves}{{3}{6}{Training loss, validation loss, and validation accuracy for the final 30-epoch run after hyperparameter selection. The validation accuracy improves steadily and reaches its best value at the end of training}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}First-Layer Weight Visualization}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix on the test set for the final 30-epoch run. Strong diagonal entries indicate correct predictions, while off-diagonal mass highlights systematic class confusions.}}{7}{figure.4}\protected@file@percent }
+\newlabel{fig:confusion}{{4}{7}{Confusion matrix on the test set for the final 30-epoch run. Strong diagonal entries indicate correct predictions, while off-diagonal mass highlights systematic class confusions}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Error Analysis}{7}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{7}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Full Search Ranking Figures}{9}{appendix.A}\protected@file@percent }
+\newlabel{app:search_rankings}{{A}{9}{Full Search Ranking Figures}{appendix.A}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Full ranking of validation accuracy for the coarse search configurations. The highest-ranked settings are dominated by ReLU, larger hidden dimensions, and learning rate \(0.03\), while Sigmoid configurations are concentrated in the lower part of the ranking.}}{9}{figure.5}\protected@file@percent }
+\newlabel{fig:search}{{5}{9}{Full ranking of validation accuracy for the coarse search configurations. The highest-ranked settings are dominated by ReLU, larger hidden dimensions, and learning rate \(0.03\), while Sigmoid configurations are concentrated in the lower part of the ranking}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Full ranking of validation accuracy for the fine search configurations. The best-performing region is concentrated around hidden widths \(768/384\) and learning rates \(0.03\) to \(0.06\).}}{10}{figure.6}\protected@file@percent }
+\newlabel{fig:fine_search}{{6}{10}{Full ranking of validation accuracy for the fine search configurations. The best-performing region is concentrated around hidden widths \(768/384\) and learning rates \(0.03\) to \(0.06\)}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Additional Qualitative Figure}{10}{appendix.B}\protected@file@percent }
+\newlabel{app:extra_figures}{{B}{10}{Additional Qualitative Figure}{appendix.B}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Visualization of first-layer weights reshaped to the input image size. The patterns are mostly coarse color-texture templates rather than sharp local filters, reflecting the limitations of a flattened MLP representation.}}{11}{figure.7}\protected@file@percent }
+\newlabel{fig:weights}{{7}{11}{Visualization of first-layer weights reshaped to the input image size. The patterns are mostly coarse color-texture templates rather than sharp local filters, reflecting the limitations of a flattened MLP representation}{figure.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Representative misclassified test samples. Many errors occur between visually similar land-cover categories such as Highway versus River/Residential and AnnualCrop versus PermanentCrop/HerbaceousVegetation.}}{12}{figure.8}\protected@file@percent }
+\newlabel{fig:errors}{{8}{12}{Representative misclassified test samples. Many errors occur between visually similar land-cover categories such as Highway versus River/Residential and AnnualCrop versus PermanentCrop/HerbaceousVegetation}{figure.8}{}}
+\gdef \@abspage@last{12}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.cache/
+results/logs/
+
+results/checkpoints/*trial*
+results/curves/*trial*
+results/weights/*trial*
+
+# 如果不想上传所有搜索中间图，也可以继续加：
+# results/search/*trial*
