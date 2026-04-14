@@ -293,17 +293,3 @@ checkpoint 采用 `.npz` 保存，内容包括：
 ```bash
 python code/test.py --checkpoint results/checkpoints/your_best_model.npz
 ```
-
-## 合理假设
-
-- 默认 `EuroSAT_RGB` 中图片可全部读入内存；对 EuroSAT 规模通常可行
-- 原始 EuroSAT RGB 图像为 `64x64`，默认下采样到 `32x32` 以平衡训练速度与分类效果
-- 超参数搜索默认每个 trial 使用较少 epoch，以控制总运行时间
-
-## 建议提交内容
-
-建议最终提交时附上：
-
-- `code/` 全部源码
-- `results/` 中最优模型与主要图表
-- 实验报告中引用 `results/` 下生成的图片和 JSON/CSV 结果
